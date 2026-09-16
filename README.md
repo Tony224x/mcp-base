@@ -2,6 +2,8 @@
 
 Apprendre à créer des **MCP servers** (Model Context Protocol) et des **tools pour agents IA**, de zéro à production.
 
+> Dépôt **template** : bouton `Use this template` en haut de page pour partir de ta propre copie.
+
 ## Quickstart
 
 ```bash
