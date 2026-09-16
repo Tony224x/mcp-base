@@ -5,7 +5,12 @@ description = "Base pédagogique MCP & AI Tools — Tutoriels progressifs + serv
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "mcp[cli]>=1.8.0",
+    # Borne haute volontaire : ce dépôt enseigne FastMCP (API mcp 1.x). En mcp 2.x,
+    # `mcp.server.fastmcp` a été renommé `mcp.server.mcpserver` (FastMCP -> MCPServer)
+    # et `langchain-mcp-adapters` importe encore l'ancien chemin — sans cette borne,
+    # une installation neuve résout mcp 2.x et casse la collecte pytest.
+    # Migration vers 2.x : https://py.sdk.modelcontextprotocol.io/v2/migration/
+    "mcp[cli]>=1.8.0,<2",
 ]
 
 [project.optional-dependencies]

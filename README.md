@@ -1,8 +1,17 @@
 # mcp-base — Base pédagogique MCP & AI Tools
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](pyproject.toml)
+[![Template](https://img.shields.io/badge/GitHub-template-2ea44f.svg)](https://github.com/Tony224x/mcp-base/generate)
+
 Apprendre à créer des **MCP servers** (Model Context Protocol) et des **tools pour agents IA**, de zéro à production.
 
 > Dépôt **template** : bouton `Use this template` en haut de page pour partir de ta propre copie.
+
+> **Version de l'API** : ce dépôt enseigne **FastMCP, l'API mcp 1.x** (`mcp.server.fastmcp`).
+> La dépendance est bornée à `mcp>=1.8.0,<2` — en mcp 2.x, FastMCP devient `MCPServer`
+> (`mcp.server.mcpserver`) et l'API change. Guide de migration officiel :
+> [py.sdk.modelcontextprotocol.io/v2/migration](https://py.sdk.modelcontextprotocol.io/v2/migration/).
 
 ## Quickstart
 
@@ -64,3 +73,7 @@ make run-hello  # Lance le tutorial 01 dans MCP Inspector
 - [uv](https://docs.astral.sh/uv/) (gestionnaire de paquets)
 - Pour les clients Claude API : clé `ANTHROPIC_API_KEY`
 - Pour le serveur GitHub : token `GITHUB_TOKEN`
+
+## Licence
+
+[MIT](LICENSE) — Copyright (c) 2026 VON BIELER Anthony.
